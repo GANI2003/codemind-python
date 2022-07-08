@@ -1,10 +1,8 @@
 n=int(input())
-arr=list(map(int,input().strip().split()))
-sum=0
-p=[]
-for i in range(n):
-    if arr[i] not in p:
-        p.append(arr[i])
-for i in range(len(p)):
-    sum=sum+p[i]
-print(sum)
+arr=list(map(int,input().split()))
+q=set(arr)
+s=0
+for i in q:
+    if(arr.count(i)>=1):
+        s+=i
+print(s)
