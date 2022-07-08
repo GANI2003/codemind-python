@@ -1,8 +1,7 @@
 n=int(input())
-add=n%10
-while n!=0:
-    r=n%10
-    if add<r:
-        add=r
-    n=n//10
-print(add)
+q=str(n)
+m=int(q[0])
+for i in range(1,len(q)):
+    if(int(q[i])>m):
+        m=int(q[i])
+print(m)
