@@ -1,9 +1,8 @@
-n=list(input())
-a=list(map(int,input().strip().split()))
-k=list(a)
-d=set(k)
-s=0
-for i in d:
-    if i%2==0:
-         s=s+1
-print(s)
+n=int(input())
+arr=list(map(int,input().split()))
+q=set(arr)
+c=0
+for  i in q:
+    if(arr.count(i)>=1 and i%2==0):
+        c+=1
+print(c)
