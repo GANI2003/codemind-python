@@ -5,5 +5,5 @@ for i in n:
         l.append(i)
         print(i,end=" ")
         f=1
-if(f==0):
-    print('-1')
+if f==0:
+    print("-1")
