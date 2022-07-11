@@ -1,10 +1,10 @@
 n=int(input())
 arr=list(map(int,input().strip().split()))
-s=0
+m=0
 t=0
 for i in range(n//2):
-    s=s+arr[i]
-print(s)
+    m=m+arr[i]
 for i in range(n//2,n):
     t=t+arr[i]
+print(m)
 print(t)
