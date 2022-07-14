@@ -1,8 +1,8 @@
 n=int(input())
 arr=list(map(int,input().strip().split()))
 a,b=map(int,input().split())
-f=0
 l=[]
+f=0
 for i in arr:
     if i<a or i>b:
         l.append(i)
