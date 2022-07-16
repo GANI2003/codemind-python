@@ -5,4 +5,4 @@ for i in n:
         print(i)
         break
 else:
-    print(-1)
+    print("-1")
