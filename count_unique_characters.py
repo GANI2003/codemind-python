@@ -1,12 +1,7 @@
 n=input()
 q=n.lower()
-l=list(q)
-for i in l:
-    if(i==" "):
-        l.remove(i)
-s=set(l)
-c=0
-for i in s:
-    if(l.count(i)==1):
-        c+=1
-print(c)
+l=[]
+for i in q:
+    if(i.isalpha() and q.count(i)==1):
+        l.append(i)
+print(len(l))
