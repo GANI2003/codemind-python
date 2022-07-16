@@ -16,3 +16,4 @@ for i in arr:
     if pal(i):
         c+=1
 print(c)
+    
