@@ -1,17 +1,19 @@
-m,n=map(int,input().strip().split())
-arr1=list(map(int,input().strip().split()))
-arr2=list(map(int,input().strip().split()))
-l=[]
+n,m=map(int,input().split())
+a=list(map(int,input().strip().split()))
 k=[]
-for i in arr1:
-    if i in arr1 and i not in l:
-        l.append(i)
-for i in arr2:
-    if i in arr2 and i not in k:
-        k.append(i)
-for i in l:
+for i in a:
     if i not in k:
-        print(i,end=' ')
-for  i in k:
-    if i not in l:
-        print(i,end=' ')
+        k.append(i)
+b=list(map(int,input().strip().split()))
+q=[]
+for i in b:
+    if i not in q:
+        q.append(i)
+l=[]
+for i in k:
+    if i not in q:
+        l.append(i)
+for i in q:
+    if i not in k:
+        l.append(i)
+print(*l)
