@@ -1,14 +1,12 @@
-def prime(n):
-    for i in range(2,n//2+1):
-        if(n%i==0):
-            return True
-    else:
-        return False
 n=int(input())
-c=1
+count=1
+f=0
 for i in range(2,n+1):
-    if(n%i==0 and prime(i)):
-        c+=1
-print(c)
-
-    
+    for j in range(2,i):
+        if i%j==0 and n%i==0:
+            f=1
+            break
+    if f==1:
+        count+=1
+    f=0
+print(count)
