@@ -1,6 +1,6 @@
 n=input()
 s=n.split()
-l=('aeiouAEIOU')
+l='aeiouAEIOU'
 c=0
 for i in s:
     for j in i:
