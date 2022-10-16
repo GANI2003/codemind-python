@@ -9,4 +9,4 @@ for i in s:
     l.append(c)
     c=0
 m=max(l)
-print(l.count(max(l)))
+print(l.count(m))
