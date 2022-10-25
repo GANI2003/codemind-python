@@ -1,22 +1,20 @@
 n=int(input())
-arr=list(map(int,input().strip().split()))
-#print(arr)
-le=[]
-lo=[]
+a=list(map(int,input().split()))
 l=[]
-for i in arr:
-    if(i%2==0):
-        le.append(i)
+k=[]
+for i in range(n):
+    if a[i]%2==0:
+        l.append(a[i])
     else:
-        lo.append(i)
-for i in range(min(len(le),len(lo))):
-    l.append(le[i])
-    l.append(lo[i])
-    arr.remove(le[i])
-    arr.remove(lo[i])
-l.extend(arr)
-if(len(l)%2==0):
-    print(*l)
-else:
-    l.append(0)
-    print(*l)
+        k.append(a[i])
+i=0
+j=0
+while i<len(l) or j<len(k):
+    if i<len(l):
+        print(l[i],end=' ')
+        i+=1
+    if j<len(k):
+        print(k[j],end=' ')
+        j+=1
+if n%2!=0:
+    print('0')
